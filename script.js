@@ -124,7 +124,7 @@ form.addEventListener("submit", (event) => {
 
   const currentHeight3 = phase4.offsetHeight;
 
- // Update the height of the phase 4 div
+ 
   phase4.style.height = `${currentHeight + card.offsetHeight}px`;
 
 });
@@ -143,7 +143,7 @@ form.addEventListener("submit", (event) => {
     assignedTo: form.assignedTo.value
   };
 
-  // Store the issue in local storage
+
   localStorage.setItem("issue" + issue.id, JSON.stringify(issue));
 
   const storedIssue = JSON.parse(localStorage.getItem("issue" + issue.id));
