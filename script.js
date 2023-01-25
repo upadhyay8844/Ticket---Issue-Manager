@@ -103,7 +103,7 @@ form.addEventListener("submit", (event) => {
  
 
 });
-const columns = document.querySelectorAll(".issue-state"); 
+const columns = document.querySelectorAll(".phase"); 
 columns.forEach((column) => {
     new Sortable(column, {
         group: "shared",
