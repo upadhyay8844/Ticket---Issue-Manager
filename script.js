@@ -14,6 +14,8 @@ form.addEventListener("submit", (event) => {
 
   const card = document.createElement("div");
   card.classList.add("card");
+  card.classList.add('list-group-item');
+  card.setAttribute("draggable","true");
 
 
 
@@ -101,7 +103,15 @@ form.addEventListener("submit", (event) => {
  
 
 });
-
+const columns = document.querySelectorAll(".issue-state"); 
+columns.forEach((column) => {
+    new Sortable(column, {
+        group: "shared",
+        animation: 500,
+    
+        ghostClass: "blue-background-class"
+    });
+});
 
 
  form.addEventListener("submit", (event) => {
