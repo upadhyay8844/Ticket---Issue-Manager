@@ -103,7 +103,7 @@ form.addEventListener("submit", (event) => {
  
 
 });
-const columns = document.querySelectorAll(".phase"); 
+const columns = document.querySelectorAll(".phases"); 
 columns.forEach((column) => {
     new Sortable(column, {
         group: "shared",
